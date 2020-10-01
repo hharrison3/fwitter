@@ -1,8 +1,10 @@
 const express = require('express');
+const routes = require('./routes');
 
 const app = express();
 
+app.use(routes);
+
 app.listen(3001, () => {
-  // eslint-disable-next-line no-console
   console.log('Server started listening on https://localhost:3001');
 });
